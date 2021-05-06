@@ -51,7 +51,7 @@ class SignIn extends Component {
                 >
                     <Input
                         prefix={<UserOutlined className="site-form-item-icon" />}
-                        placeholder="Nome de usuário"
+                        placeholder="Email"
                         type="email"
                         value={email}
                         onChange={e => this.setState({email: e.target.value })}

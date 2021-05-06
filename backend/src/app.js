@@ -34,7 +34,6 @@ class App {
   }
 
   routes() {
-    console.log('oi')
     this.server.use(routes);
   }
 

@@ -7,6 +7,7 @@ import history from "./history";
 import PrivateRoute from "./private";
 import GuestRoute from './guest'
 
+import Game from "../Pages/Game"
 import Main from "../Pages/Main";
 import SignUp from "../Pages/Auth/SignUp";
 import SignIn from "../Pages/Auth/SignIn";
@@ -17,6 +18,7 @@ const Routes = () => (
             <GuestRoute path="/signin" component={SignIn} />
             <GuestRoute path="/signup" component={SignUp} />
             <PrivateRoute exact path="/" component={Main} />
+            <PrivateRoute path="/game" component={Game} />
         </Switch>
     </ConnectedRouter>
 )

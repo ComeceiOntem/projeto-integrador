@@ -11,8 +11,8 @@ export const AuthTypes = Types
 export default Creators;
 
 export const INITIAL_STATE = Immutable({
-    signedIn: !!localStorage.getItem("@codeDojo:token"),
-    token: localStorage.getItem("@codeDojo:token") || null,
+    signedIn: !!localStorage.getItem("@joelProjeto:token"),
+    token: localStorage.getItem("@joelProjeto:token") || null,
 })
 
 export const success = (state, {token}) => {

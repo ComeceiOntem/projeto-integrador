@@ -10,11 +10,11 @@ export function* signIn({ email, password }) {
     try {
       const response = yield call(api.post, '/sessions', {email, password})
 
-        localStorage.setItem('@codeDojo:token', response.data.token)
+        localStorage.setItem('@joelProjeto:token', response.data.token)
 
         yield put(AuthActions.signInSuccess(response.data.token))
 
-        yield put(push('/'))
+        yield put(push('/game'))
 
     } catch (e) {
         openNotificationWithIconError('error')
